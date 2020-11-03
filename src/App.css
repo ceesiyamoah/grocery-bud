@@ -2,6 +2,7 @@
 	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
+	font-family: 'Roboto', sans-serif;
 }
 
 .App {
@@ -11,9 +12,19 @@
 	min-height: 60vh;
 }
 
+.header {
+	font-size: 40px;
+	font-weight: bold;
+	padding: 10px;
+}
+.modal {
+	width: 70%;
+	text-align: center;
+}
+
 .container {
 	box-shadow: 1px 1px 5px grey;
-	width: 60vw;
+	width: 50vw;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -27,15 +38,54 @@
 .input-container > * {
 	font-size: 5vh;
 	border-radius: 5px;
+	border: none;
 }
 
 .input-container > input {
 	width: 80%;
-	border-top-right-radius: 0;
-	border-bottom-right-radius: 0;
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
+	background-color: rgb(238, 238, 238);
+	padding: 2px;
 }
 .input-container > button {
 	width: 20%;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
+	border-top-left-radius: 2px;
+	border-bottom-left-radius: 2px;
+	background-color: rgb(0, 189, 189);
+	cursor: pointer;
+}
+.input-container > button:hover {
+	color: white;
+}
+
+.list-container {
+	margin-top: 8vh;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	font-size: 5vh;
+	padding: 10px;
+	border-radius: 2px;
+}
+.list-container:hover {
+	background-color: rgb(238, 238, 238);
+}
+.list-container > div:last-child {
+	width: 10%;
+	justify-content: space-between;
+	display: flex;
+}
+span > img {
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.btn {
+	background-color: white;
+	color: red;
+	border: none;
+	cursor: pointer;
+	font-size: 5vh;
 }
