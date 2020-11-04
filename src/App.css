@@ -13,13 +13,14 @@
 }
 
 .header {
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: bold;
 	padding: 10px;
 }
 .modal {
-	width: 70%;
+	width: 100%;
 	text-align: center;
+	border-radius: 5px;
 }
 
 .container {
@@ -36,7 +37,7 @@
 	display: flex;
 }
 .input-container > * {
-	font-size: 5vh;
+	font-size: 4vh;
 	border-radius: 5px;
 	border: none;
 }
